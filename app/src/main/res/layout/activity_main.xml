@@ -1,47 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:id="@+id/gridLayout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:columnCount="2"
+    android:orientation="vertical">
 
-    <android.support.v7.widget.GridLayout
-        android:id="@+id/gridLayout"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:layout_editor_absoluteX="-208dp"
-        tools:layout_editor_absoluteY="-333dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="1"
+        android:layout_column="0"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:Margins="102dp"
+        android:text="@string/textViewWebviewer"
+        android:textSize="30sp" />
 
-    </android.support.v7.widget.GridLayout>
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="5"
+        android:layout_column="0"
+        android:layout_gravity="center"
+        android:text="@string/textViewGoogle"
+        android:textSize="24sp" />
 
-    <LinearLayout
-        android:layout_width="398dp"
-        android:layout_height="720dp"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent">
+    <Button
+        android:id="@+id/buttonGoogle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="5"
+        android:layout_column="1"
+        android:text="@string/buttonGoogle"
+        android:textSize="18sp" />
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/textViewWebviewer"
-            android:textSize="30sp" />
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="8"
+        android:layout_column="0"
+        android:layout_gravity="center"
+        android:text="@string/textViewUCSDExt"
+        android:textSize="24sp" />
 
-        <Button
-            android:id="@+id/buttonGoogle"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/buttonGoogle"
-            android:textSize="18sp" />
+    <Button
+        android:id="@+id/buttonUCSDExt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="8"
+        android:layout_column="1"
+        android:text="@string/buttonUCSDExt"
+        android:textSize="18sp" />
 
-        <Button
-            android:id="@+id/buttonUCSDExt"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/buttonUCSDExt"
-            android:textSize="18sp" />
-
-    </LinearLayout>
-
-</android.support.constraint.ConstraintLayout>
+</GridLayout>

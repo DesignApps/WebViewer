@@ -1,6 +1,8 @@
 <resources>
     <string name="app_name">WebViewer</string>
     <string name="textViewWebviewer">Select a Website</string>
-    <string name="buttonGoogle">Google</string>
-    <string name="buttonUCSDExt">UCSD Extension</string>
+    <string name="buttonGoogle">GO</string>
+    <string name="buttonUCSDExt">GO</string>
+    <string name="textViewGoogle">Google</string>
+    <string name="textViewUCSDExt">UCSD Ext</string>
 </resources>
