@@ -8,49 +8,38 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/textViewWebviewer"
         android:textSize="30sp" />
 
-    <RelativeLayout
+    <TextView
+        android:id="@+id/textViewGoogle"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:text="@string/textViewGoogle"
+        android:textSize="24sp" />
 
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/textViewGoogle"
-            android:textSize="24sp" />
-
-        <Button
-            android:id="@+id/buttonGoogle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/buttonGoogle"
-            android:textSize="24sp" />
-    </RelativeLayout>
-
-    <RelativeLayout
+    <Button
+        android:id="@+id/buttonGoogle"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:text="@string/buttonGoogle"
+        android:textSize="24sp" />
 
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/textViewUCSDExt"
-            android:textSize="24sp" />
+    <TextView
+        android:id="@+id/textViewUCSDExt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/textViewUCSDExt"
+        android:textSize="24sp" />
 
-        <Button
-            android:id="@+id/buttonUCSDExt"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/buttonUCSDExt"
-            android:textSize="24sp" />
-    </RelativeLayout>
+    <Button
+        android:id="@+id/buttonUCSDExt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/buttonUCSDExt"
+        android:textSize="24sp" />
 
 </LinearLayout>
