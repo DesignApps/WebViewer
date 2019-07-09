@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
+    android:background="#3498db"
     tools:context=".MainActivity">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/textViewWebviewer"
+        android:layout_margin="40dp"
         android:layout_gravity="center"
         android:textSize="30sp" />
 
@@ -25,10 +26,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
-            android:layout_alignParentLeft="true"
             android:layout_gravity="start"
             android:text="@string/textViewGoogle"
-            android:textSize="24sp" />
+            android:textSize="24sp"
+            android:layout_alignParentLeft="true" />
 
         <Button
             android:id="@+id/buttonGoogle"
@@ -36,8 +37,8 @@
             android:layout_height="wrap_content"
             android:text="@string/buttonGoogle"
             android:textSize="24sp"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true" />
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true" />
     </RelativeLayout>
 
     <RelativeLayout
@@ -49,21 +50,21 @@
             android:id="@+id/textViewUCSDExt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
             android:layout_gravity="start"
             android:text="@string/textViewUCSDExt"
-            android:textSize="24sp"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true" />
+            android:textSize="24sp" />
 
         <Button
             android:id="@+id/buttonUCSDExt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
             android:layout_gravity="end"
             android:text="@string/buttonUCSDExt"
-            android:textSize="24sp"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true" />
+            android:textSize="24sp" />
     </RelativeLayout>
 
 </LinearLayout>
