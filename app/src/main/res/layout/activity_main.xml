@@ -1,61 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-
-<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/gridLayout"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:columnCount="2"
+    android:layout_height="match_parent"
     android:orientation="vertical"
-    android:useDefaultMargins="true">
+    tools:context=".MainActivity">
+
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_row="5"
-        android:layout_column="0"
-        android:layout_gravity="center_horizontal|center_vertical"
         android:text="@string/textViewWebviewer"
         android:textSize="30sp" />
 
-    <TextView
-        android:id="@+id/textView"
+    <RelativeLayout
         android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:layout_row="10"
-        android:layout_column="0"
-        android:layout_gravity="center"
-        android:text="@string/textViewGoogle"
-        android:textSize="24sp" />
+        android:layout_height="wrap_content">
 
-    <Button
-        android:id="@+id/buttonGoogle"
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/textViewGoogle"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/buttonGoogle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/buttonGoogle"
+            android:textSize="24sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
         android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:layout_row="10"
-        android:layout_column="1"
-        android:layout_gravity="center"
-        android:text="@string/buttonGoogle"
-        android:textSize="24sp" />
+        android:layout_height="wrap_content">
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:layout_row="11"
-        android:layout_column="0"
-        android:layout_gravity="center"
-        android:text="@string/textViewUCSDExt"
-        android:textSize="24sp" />
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/textViewUCSDExt"
+            android:textSize="24sp" />
 
-    <Button
-        android:id="@+id/buttonUCSDExt"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:layout_row="11"
-        android:layout_column="1"
-        android:layout_gravity="center"
-        android:text="@string/buttonUCSDExt"
-        android:textSize="24sp" />
+        <Button
+            android:id="@+id/buttonUCSDExt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/buttonUCSDExt"
+            android:textSize="24sp" />
+    </RelativeLayout>
 
-</GridLayout>
+</LinearLayout>
