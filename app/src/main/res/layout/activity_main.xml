@@ -6,12 +6,13 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:columnCount="2"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:useDefaultMargins="true">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_row="1"
+        android:layout_row="5"
         android:layout_column="0"
         android:layout_gravity="center_horizontal|center_vertical"
         android:text="@string/textViewWebviewer"
@@ -20,8 +21,8 @@
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_row="5"
+        android:layout_height="match_parent"
+        android:layout_row="10"
         android:layout_column="0"
         android:layout_gravity="center"
         android:text="@string/textViewGoogle"
@@ -30,17 +31,18 @@
     <Button
         android:id="@+id/buttonGoogle"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_row="5"
+        android:layout_height="match_parent"
+        android:layout_row="10"
         android:layout_column="1"
+        android:layout_gravity="center"
         android:text="@string/buttonGoogle"
-        android:textSize="18sp" />
+        android:textSize="24sp" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_row="8"
+        android:layout_height="match_parent"
+        android:layout_row="11"
         android:layout_column="0"
         android:layout_gravity="center"
         android:text="@string/textViewUCSDExt"
@@ -49,10 +51,11 @@
     <Button
         android:id="@+id/buttonUCSDExt"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_row="8"
+        android:layout_height="match_parent"
+        android:layout_row="11"
         android:layout_column="1"
+        android:layout_gravity="center"
         android:text="@string/buttonUCSDExt"
-        android:textSize="18sp" />
+        android:textSize="24sp" />
 
 </GridLayout>
